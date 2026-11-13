@@ -11,7 +11,7 @@
       });
       packages = forAllSystems (system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system});
       overlays.default = final: prev: {
-        inherit (self.legacyPackages.${prev.system}) glitterdrag contextsearchwebext;
+        inherit (self.legacyPackages.${prev.system}) glitterdrag-pro contextsearch-web-ext;
       };
     };
 }

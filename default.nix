@@ -1,6 +1,6 @@
 { pkgs }:
 
 {
-  glitterdrag = pkgs.callPackage ./pkgs/glitterdrag { };
+  glitterdragpro = pkgs.callPackage ./pkgs/glitterdrag-pro { };
   contextsearchwebext = pkgs.callPackage ./pkgs/contextsearch-web-ext { };
 }
